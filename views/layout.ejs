@@ -1,0 +1,59 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+  <title>
+    <% if (locals.title) { %>
+    <%=locals.title%>
+    <% } else { %>PeerJS
+    <% } %>
+  </title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Language" content="en-us">
+  <meta name="description" content="Where peers connect and data channels easily.">
+  <meta name="keywords" content="peerjs datachannel p2p webrtc chrome firefox api
+library peer js nodejs node javascript">
+
+  <link rel="preload" href="css/style.css" as="style" />
+  <link rel="preload" href="css/button.css" as="style" />
+  <link rel="preload" href="css/lato.css" as="style" />
+  <link rel="preload" href="npm:github-fork-ribbon-css/gh-fork-ribbon.css" as="style" />
+  <link rel="preload" href="fonts/lato-v22-latin-ext_latin-700.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
+  <link rel="preload" href="fonts/lato-v22-latin-ext_latin-regular.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
+
+  <link href="css/style.css" rel="stylesheet" type="text/css">
+  <link href="css/button.css" rel="stylesheet" type="text/css">
+  <link href="css/lato.css" rel="stylesheet" type="text/css"/>
+  <link href="npm:github-fork-ribbon-css/gh-fork-ribbon.css" rel="stylesheet" type="text/css"/>
+
+  <link rel="shortcut icon" href="media/favicon.ico" />
+</head>
+
+<body>
+  <a class="github-fork-ribbon" href="https://github.com/peers" data-ribbon="Fork PeerJS on GitHub" title="Fork PeerJS on GitHub">Fork PeerJS on GitHub</a>
+  <div id="container">
+    <div id="nav-wrap">
+      <div class="sign">
+        PEER
+        <span class="highlight">JS</span>
+      </div>
+      <div id="nav">
+        <a href="/" <% if (locals.page==='home' ) {%>class="active" <% } %>>Home</a>
+        <a href="/docs#start" <% if (locals.page==='start' ) {%>class="active" <% } %>>Get Started</a>
+        <a href="/docs#api">API Reference</a>
+        <a href="/examples">Examples</a>
+        <a href="/peerserver" <% if (locals.page==='peerserver' ) {%>class="active" <% } %>>PeerServer Cloud</a>
+        <a href="https://status.peerjs.com" target="_blank">Status page</a>
+        <a href="/team" <% if (locals.page==='team' ) {%>class="active" <% } %>>Team</a>
+      </div>
+    </div>
+    <div id="content">
+      <div id="text">
+        <%-body%>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>

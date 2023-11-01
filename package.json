@@ -1,0 +1,20 @@
+{
+  "name": "peerjs.com",
+  "version": "1.0.0",
+  "description": "PeerJS website",
+  "scripts": {
+    "format": "prettier --write .",
+    "build": "rm -rf out dist && cp -r public out && node ejs.js && parcel build out/*.html out/docs/*.html"
+  },
+  "repository": "https://github.com/peers/peerjs.com",
+  "dependencies": {
+    "ejs": "~3.1.8",
+    "github-fork-ribbon-css": "^0.2.3",
+    "jquery": "^3.6.2"
+  },
+  "devDependencies": {
+    "parcel": "^2.8.0",
+    "prettier": "~2"
+  },
+  "browserslist": "cover 99.5%"
+}
